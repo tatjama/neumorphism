@@ -1,0 +1,117 @@
+/*DARK MODE*/
+
+.dark-mode span{   
+            text-shadow: 4px 4px 8px $grayShadow, -4px -4px 8px $grayShadowDark;   
+            color: $redShadowLighter; 
+            /*text-shadow: 1% 1% 2% $grayShadow, 1% 1% 2% $grayShadowDark;  */  
+        }    
+
+/*Button*/    
+    
+    .up-white{
+        color: $grayShadowLight;    
+        text-shadow: 2px 2px 4px $graySecondaryColor, -2px -2px 4px $grayShadowLight;
+        box-shadow: 4px 4px 8px $grayShadow, -4px -4px 8px $grayShadowLight;
+    }
+    .down-white{
+        color: $grayShadowLight;    
+        text-shadow: 2px 2px 4px $grayShadowLight, -2px -2px 4px $graySecondaryColor;
+        box-shadow: 4px 4px 8px $grayShadowLight, -4px -4px 8px $grayShadow;
+        font-stretch: extra-condensed;
+    }
+    .up-red{    
+        color: $redPrimaryColor;
+        text-shadow: 2px 2px 4px $redShadowDarker, -2px -2px 4px $redShadowLighter;
+        box-shadow: 4px 4px 8px $grayShadowDark, -4px -4px 8px $redShadowLight;    
+    }
+    .down-red{    
+        color: $redPrimaryColor;
+        text-shadow: 2px 2px 4px $redShadowLight, -2px -2px 4px $redShadowDarker;
+        box-shadow: 4px 4px 8px $redShadowLight, -4px -4px 8px $grayShadowDark;
+        font-stretch: extra-condensed;
+    }
+    .up-black{
+        text-shadow: 2px 2px 4px $redShadowDarker, -2px -2px 4px $redShadowLighter;
+        box-shadow: 4px 4px 8px $grayShadowDark, -4px -4px 8px $redShadowLight;    
+    }
+    .down-black{
+        text-shadow: 2px 2px 4px $redShadowLight, -2px -2px 4px $redShadowDarker;
+        box-shadow: 4px 4px 8px $redShadowLight, -4px -4px 8px $grayShadowDark;
+        font-stretch: extra-condensed;
+    }
+    .up-dark{
+        color: $grayShadowDark;    
+        text-shadow: 2px 2px 4px $grayShadowDarker, -2px -2px 4px $grayPrimaryColor;
+        box-shadow: 4px 4px 8px $grayShadowDark, -4px -4px 8px $grayPrimaryColor;
+    }
+    .down-dark{
+        color: $grayShadowDark;    
+        text-shadow: 2px 2px 4px $grayShadow, -2px -2px 4px $grayShadowDarker;
+        box-shadow: 4px 4px 8px $grayShadow, -4px -4px 8px $grayShadowDark;
+        font-stretch: extra-condensed;
+    }
+  
+
+
+/*Colors*/
+.color-red{
+    background-color: $redShadowLighter;
+}
+.color-gray-secondary{
+    background-color: $graySecondaryColor;
+}
+.text-color-red{
+    color: $redPrimaryColor;
+}
+.text-gray-secondary-color{
+    color: $graySecondaryColor;
+}
+.text-gray-secondary-color-dark{
+    color: $grayShadowDark;
+}
+.text-gray-secondary-color-darker{
+    color: $grayShadowDarker;
+}
+
+/*Shadows*/
+.text-gray-secondary-shadow{
+    text-shadow: 4px 4px 8px $grayShadowDark, -4px -4px 8px $grayShadow;
+}
+.text-gray-secondary-shadow-dark{
+    text-shadow: 2px 2px 4px $grayShadowDarker, -2px -2px 4px $grayPrimaryColor;
+}
+.text-gray-secondary-shadow-dark-in{
+    text-shadow: 2px 2px 4px $grayShadow, -2px -2px 4px $grayShadowDarker;
+}
+.text-gray-secondary-shadow-red-dark{
+    text-shadow: 2px 2px 4px $redShadowDarker, -2px -2px 4px $redShadowLighter;
+}
+
+.gray-secondary-out{
+    border: solid 5px $graySecondaryColor;
+    box-shadow: 4px 4px 8px $grayShadowDark, -4px -4px 8px $grayPrimaryColor;
+}
+.gray-secondary-in{
+    border: solid 5px $graySecondaryColor;
+    box-shadow: 4px 4px 8px $grayShadow, -4px -4px 8px $grayShadowDark;
+}
+.red-secondary-out{
+    border: solid 5px $graySecondaryColor;
+    box-shadow: 4px 4px 8px $grayShadowDark, -4px -4px 8px $redShadowLight;
+}
+.red-secondary-in{
+    border: solid 5px $graySecondaryColor;
+    box-shadow: 4px 4px 8px $redShadowLight, -4px -4px 8px $grayShadowDark;
+}
+
+@media screen and (max-width: 800px){    
+    .dark-mode h1{
+        text-shadow: 3px 3px 6px $grayShadowDark, -3px -3px 6px $grayShadow;
+    }
+}
+@media screen and (max-width: 630px){    
+    .dark-mode h1{
+        color: $graySecondaryColor;
+        text-shadow: 2px 2px 4px $grayShadowDark, -2px -2px 4px $grayShadow;
+    }
+}

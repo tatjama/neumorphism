@@ -1,0 +1,150 @@
+@import "./variables"; 
+@import "./utils";
+@import './_darkMode';
+@import "./lightMode";
+
+#portfolio-container{
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    
+}
+.direction-row-between .circle-out{
+    width: 35px;
+    height: 35px;
+}
+
+.portfolio-card{
+    width: 20%;
+    height: 100%;
+    .circle-out{
+        margin-left: 40px;
+    }   
+    a{
+        color: $grayShadowDarker;
+    }  
+
+    .one:hover{       
+        box-shadow: 4px 4px 8px $grayShadow, -4px -4px 8px $grayShadowDark;
+        text-shadow: 2px 2px 4px $grayShadow, -2px -2px 4px $grayShadowDarker;
+        color: $grayShadowDark;
+        font-stretch: extra-condensed;
+        
+        div{
+            text-shadow: 2px 2px 4px $grayShadow, -2px -2px 4px $grayShadowDarker;
+            transform: scale(0.9);
+        }
+           
+    }     
+    a:last-child:hover{
+        color: $redShadowLighter;
+    }
+    .two:hover{       
+        box-shadow: 4px 4px 8px $grayShadow, -4px -4px 8px $grayShadowDark;
+        text-shadow: 2px 2px 4px $grayShadow, -2px -2px 4px $grayShadowDarker;
+        color: $grayShadowDark;
+        font-stretch: extra-condensed;
+        transform: scale(0.9);
+        div{           
+            box-shadow: 4px 4px 8px $grayShadow, -4px -4px 8px $grayShadowDark;
+        }
+    }     
+}
+.active{
+    /*box-shadow: 4px 4px 8px $grayShadow, -4px -4px 8px $grayShadowDark;*/
+    text-shadow: 2px 2px 4px $grayShadowDark, -2px -2px 4px $grayShadowDarker;
+    color: $redShadowLight;
+    box-shadow: 4px 4px 8px $redShadowLighter, -4px -4px 8px $grayShadowDark;
+        font-stretch: extra-condensed; 
+}
+.active.one div{
+    text-shadow: 2px 2px 4px $grayShadow, -2px -2px 4px $grayShadowDarker;
+}
+.active.two div{
+    box-shadow: 4px 4px 8px $grayShadow, -4px -4px 8px $grayShadowDark;
+}
+.first{
+    .square-out, .square-in{
+        border-bottom-left-radius: 30px;
+        border-top-left-radius: 30px;
+    }
+}
+.card h4{
+    max-width: 95px;
+}
+.last{
+    .square-out, .square-in{
+        border-bottom-right-radius: 30px;
+        border-top-right-radius: 30px;
+    }
+}
+.play{
+    transform: rotate(-30deg);
+    width: 30px;
+    padding-bottom: 25px;
+    padding-left: 8px;
+}
+
+.project{
+    display: none;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    background-color: $graySecondaryColor;
+    padding: 15% 10%;
+    div{
+        padding: 5%;
+    }
+    p{
+        font-size: 1em;
+        padding: 5px;
+    }
+    h3{
+        padding: 5px;
+        font-size: 1.5em;
+    }
+    .circle-out{
+        width: 70px;
+        height: 70px;
+        &:hover{
+            box-shadow: 4px 4px 8px $grayShadow, -4px -4px 8px $grayShadowDark;
+        }
+    }
+    button{
+        width: 100%;
+    }
+    button:hover{
+        background-color: $redShadowLighter;
+    }
+    a{
+        color: $redShadowLighter;
+        &:hover{
+            color: $redShadowLight;
+        }
+    }
+    figure{
+        img{
+            width: 150px;
+            height: auto;
+            padding: 5px;
+        }
+        figcaption{
+            font-size: small;
+            padding: 5px;
+        }
+    } 
+}
+.contact{
+    img{
+        width: 30px;
+        height: auto;
+        
+    }
+    .circle-in{
+        border: 0px;
+        img{
+            width: 25px;
+        }
+    }
+}
